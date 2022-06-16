@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scle=1.0" />
+    <title>University Webite design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ecd2edda5b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section class="code-header">
+      <nav>
+        <a href="index.htlm"><img src="" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <!-- icone ferme menu-->
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">CODE ACCÉLÉRÉ</a></li>
+            <li><a href="course.html">CONDUITE ACCELERÉ</a></li>
+            <li><a href="blog.html">INSCRIPTION</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+        <!--icone bar -->
+      </nav>
+      <!-- <h1>Code accélérée</h1> -->
+    </section>
+    <!-- ---------------------------------"ABOUT US CONTENT"------------------------------------------------------>
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <img src="images/about.jpg" />
+        </div>
+        <div class="about-col">
+          <h1>Simple, rapide , efficace</h1>
+          <p>
+            <ul>
+              <li> Sur une période de 5 jours (de 9h à 12h et de 13h à 17h) soit
+                pendant 35 heures, K6 auto-école vous propose la formation au Code
+                de la route en accéléré avec un enseignant vous accompagnant tout au
+                long du stage.</li>
+              <li> Rapide et efficace, ce stage code vous prépare en
+                très peu de temps à l'examen du code de la route. Thème par thème,
+                vous évoluerez progressivement pour maitriser le code de la route.</li>
+              <li> La formation se déroule en alternant les cours et les tests afin de
+                mieux vous perfectionner.</li>
+              <li>Vous passerez ensuite un examen de code
+                blanc qui confirmera vos acquis avant de passer l'examen final dans
+                les jours qui suivent. Si toutefois l'examen blanc n'a pas été
+                favorable, vous pourrez continuer à compléter votre formation
+                gratuitement en salle de code. </li>
+              <li></li>
+            </ul>
+            
+          
+          </p>
+          <a href="" class="hero-btn red-btn">Je m'inscris en ligne</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----5eme section --------------------"footer"------------------------------------------------------>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. orporis
+        aliquam deleniti magnam ullam con temporibus blanditiis i orporis <br />
+        deleniti magnam ullam consequa poribus blan
+      </p>
+
+      <div class="icons">
+        <i class="fa fa-facebok"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made With <i class="fa-solid fa-heart-pulse"></i> by Josephine NYA</p>
+    </section>
+
+    <!-----------------------------------Javascript pour le menu  petit écran-->
+    <script>
+      var navLinks = Element.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

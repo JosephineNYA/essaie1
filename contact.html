@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scle=1.0" />
+    <title>University Webite design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ecd2edda5b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.htlm"><img src="images/logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <!-- icone ferme menu-->
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">CODE ACCÉLÉRÉ</a></li>
+            <li><a href="course.html">CONDUITE ACCELERÉ</a></li>
+            <li><a href="blog.html">INSCRIPTION</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+        <!--icone bar -->
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+    <!-- ---------------------------------"CONTACT US "------------------------------------------------------>
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2705.263399596065!2d5.055693915620238!3d47.30919257916611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f29e774ea33771%3A0x673b337a92f9e00!2s55%20Bd%20Mansart%2C%2021000%20Dijon!5e0!3m2!1sfr!2sfr!4v1651075714994!5m2!1sfr!2sfr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>55 BOULEVARD MANSAR</h5>
+              <p>Dijon , France</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>06 24 12 25 15</h5>
+              <p>Du lundi au samedi</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <span>
+              <h5>josephinenya@yhoo.fr</h5>
+              <p>Envoyez-moi un mail ></p>
+            </span>
+          </div>
+
+          <div></div>
+        </div>
+        <div class="contact-col">
+          <!-----tableau------------------>
+          <form action="form-handler.php" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder=" Enter Your E-mail"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder=" Enter Your subject"
+              required
+            />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="message"
+              required
+            ></textarea>
+            <button type="submit" class="hero-btn red-btn">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----5eme section --------------------"footer"------------------------------------------------------>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. orporis
+        aliquam deleniti magnam ullam con temporibus blanditiis i orporis <br />
+        deleniti magnam ullam consequa poribus blan
+      </p>
+
+      <div class="icons">
+        <i class="fa fa-facebok"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made With <i class="fa-solid fa-heart-pulse"></i> by Josephine NYA</p>
+    </section>
+
+    <!-----------------------------------Javascript pour le menu  petit écran-->
+    <script>
+      var navLinks = Element.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
